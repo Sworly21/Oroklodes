@@ -10,6 +10,11 @@ public class Main {
         }
         Haromszog h1 = new Haromszog(3,4,5);
         System.out.println(h1);
+        System.out.println();
+        for (int i = 0; i < 100; i++) {
+            Haromszog h = new Haromszog();
+            System.out.println(h);
+        }
     }
 
 }

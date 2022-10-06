@@ -15,6 +15,21 @@ public class Haromszog extends Sokszog{
         }
     }
 
+    public Haromszog(){
+        super(veletlenOldalgeneralas());
+        this.b = veletlenOldalgeneralas();
+        this.c = veletlenOldalgeneralas();
+        while (!this.isSzergesztheto()){
+            super.setA(veletlenOldalgeneralas());
+            this.b = veletlenOldalgeneralas();
+            this.c = veletlenOldalgeneralas();
+        }
+    }
+
+    private static double veletlenOldalgeneralas() {
+        return Math.random() * 10 + 5;
+    }
+
     public void setB(double b) {
         this.b = b;
         if (!this.isSzergesztheto()){
